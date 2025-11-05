@@ -1,0 +1,257 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  transition: 0.5s ease-in-out;
+}
+
+body.dark {
+  background-color: #14161d;
+}
+
+body.dark .hero {
+  background-color: #111216;
+}
+
+body.dark .searchTour {
+  background-color: var(--headerBg);
+}
+
+body.dark .searchedTour {
+  background-color: #111216;
+  color: #fff !important;
+}
+
+body.dark .title {
+  color: #fff !important;
+}
+
+body.dark .tourCard {
+  background-color: #111216;
+  color: #fff !important;
+}
+
+body.dark .tourTitle {
+  color: #f8f9fa !important;
+}
+
+body.dark .tourDesc {
+  color: #c7d5f1 !important;
+}
+
+body.dark .testimonial {
+  background-color: #111216;
+}
+
+body.dark .testimonialName {
+  color: #fff !important;
+}
+
+body.dark .testimonialText {
+  color: #c7d5f1 !important;
+}
+
+body.dark .swiper-pagination-bullet {
+  background-color: #c7d5f1;
+}
+
+body.dark .aboutSection {
+  background-color: #111216;
+}
+
+body.dark .aboutTitle {
+  color: #fff;
+}
+
+body.dark .aboutText {
+  color: #c7d5f1;
+}
+
+body.dark .contactText {
+  color: #c7d5f1;
+}
+
+body.dark .whyCard {
+  background-color: #111216;
+}
+
+body.dark .whyTitle {
+  color: #fff;
+}
+
+body.dark .whyText {
+  color: #c7d5f1;
+}
+
+body.dark .aboutSocial {
+  color: #c7d5f1;
+}
+
+body.dark .blogCard {
+  background-color: #111216;
+}
+
+body.dark .blogText {
+  color: #c7d5f1;
+}
+
+body.dark .darkTitle {
+  color: #fff !important;
+}
+
+body.dark .darkTitle:hover {
+  color: #111216 !important;
+}
+
+body.dark .tourPageText {
+  color: #c7d5f1;
+}
+
+body.dark .aboutSocial:hover {
+  color: #155dfc;
+}
+
+.aboutSocial:hover {
+  color: #155dfc;
+}
+
+body.dark .textbox {
+  color: #c7d5f1;
+}
+
+body.dark .textarea {
+  color: #c7d5f1;
+}
+
+body.dark .callPhone {
+  background-color: #155dfc;
+}
+
+body.dark .phoneNum:hover {
+  background-color: #2b7fff;
+}
+
+body.dark .popularTour {
+  background-color: #111216;
+}
+
+body.dark .popularTourText {
+  color: #c7d5f1;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.scrollTop {
+  z-index: 99999;
+}
+
+body.dark .errorPage {
+  background-color: #111216;
+}
+
+body.dark .notPage {
+  background-color: #14161d;
+}
+
+body.dark .errorText {
+  color: #c7d5f1;
+}
+
+@theme {
+  --headerBg: #023e8a;
+  --footerBg: #023e8a;
+}
+
+.swiper-pagination {
+  bottom: -5px !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.phoneNumLogo {
+  transition: 1s;
+}
+
+.phoneNum:hover .phoneNumLogo {
+  transform: rotate(360deg);
+}
+
+.hamburger {
+  z-index: 999999;
+}
+
+.overlayTour {
+  backdrop-filter: blur(3px);
+}
+
+.homeTours .tourCard {
+  transition: transform 0.3s ease-in-out;
+}
+
+.homeTours .tourCard:hover {
+  transform: translateY(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.whyUs .whyCard {
+  transition: transform 0.3s ease-in-out;
+}
+
+.whyUs .whyCard:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo:hover {
+  animation: tilt-shaking 0.15s infinite;
+  transition: 0.3s ease-in;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
