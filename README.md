@@ -2,6 +2,7 @@
 
 <p align="center">
   <em>The front-end part of a travel website designed to showcase destinations, tours, and booking options.</em>
+  <em>The project uses React!</em>
 </p>
 
 <p align="center">
